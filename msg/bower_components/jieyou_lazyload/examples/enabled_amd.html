@@ -10,7 +10,7 @@
   <!--[if lt IE 9]>
     <script src="page_js/html5shiv.js"></script>
   <![endif]-->
-  
+
   <style type="text/css">
     .container img {
       margin-bottom: 10px;
@@ -24,7 +24,7 @@
       <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
         <h1>lazyload Plugin for jQuery | Zepto</h1>
         <p class="des">
-          <!--<iframe src="http://ghbtns.com/github-btn.html?user=tuupola&amp;repo=jquery_lazyload&amp;type=watch&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="92" height="30"></iframe>    
+          <!--<iframe src="http://ghbtns.com/github-btn.html?user=tuupola&amp;repo=jquery_lazyload&amp;type=watch&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="92" height="30"></iframe>
           <iframe src="http://ghbtns.com/github-btn.html?user=tuupola&amp;repo=jquery_lazyload&amp;type=fork&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="30"></iframe>-->
           This project is forked from <a href="https://github.com/tuupola/jquery_lazyload"><span class="label label-danger">tuupola/jquery_lazyload</span></a> and add features below:<br/>
           * Many Details for improve performance;<br/>
@@ -38,43 +38,43 @@
       </div>
     </div>
   </div>
-   
+
   <div class="container">
     <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-      
+
       <h2>Enabled with an AMD loader (such as `requirejs`)</h2>
       <p>
         Images below the fold (the ones lower than window bottom) are not loaded. When scrolling down
-        they are loaded when needed. Empty cache and shift-reload to test again. Compare this to page 
-        where plugin is <a href="disabled.html">disabled</a>, same page with 
-        <a href="enabled_fadein.html">fadein effect</a>,  page with <a href="enabled_wide.html">wide 
+        they are loaded when needed. Empty cache and shift-reload to test again. Compare this to page
+        where plugin is <a href="disabled.html">disabled</a>, same page with
+        <a href="enabled_fadein.html">fadein effect</a>,  page with <a href="enabled_wide.html">wide
         layout</a> or wide content <a href="enabled_wide_container.html">inside container</a>.
       </p>
 
-      <pre class="prettyprint">
-&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"&gt;&lt;/script&gt;
-&lt;script>
-require.config({
-  // baseUrl: 'js/lib',
-  paths: {
-      // the left side is the module ID,
-      // the right side is the path to
-      // the jQuery file, relative to baseUrl.
-      // Also, the path should NOT include
-      // the '.js' file extension. This example
-      // is using jQuery 1.9.0 located at
-      // js/lib/jquery-1.9.0.js, relative to
-      // the HTML page.
-      jquery: 'http://webmap2.map.bdimg.com/yyfm/jQuery_1.x/1.10.2/js/jQuery_1.x.min'
-  }
-});
-&lt;/script&gt;
-&lt;script&gt;
-require(['jquery','../lazyload'],function($){
-  $(".lazy").lazyload()
-})
-&lt;/script&gt;
-</pre>
+<!--      <pre class="prettyprint">-->
+<!--          &lt;script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"&gt;&lt;/script&gt;-->
+<!--          &lt;script>-->
+<!--          require.config({-->
+<!--            // baseUrl: 'js/lib',-->
+<!--            paths: {-->
+<!--                // the left side is the module ID,-->
+<!--                // the right side is the path to-->
+<!--                // the jQuery file, relative to baseUrl.-->
+<!--                // Also, the path should NOT include-->
+<!--                // the '.js' file extension. This example-->
+<!--                // is using jQuery 1.9.0 located at-->
+<!--                // js/lib/jquery-1.9.0.js, relative to-->
+<!--                // the HTML page.-->
+<!--                jquery: 'http://webmap2.map.bdimg.com/yyfm/jQuery_1.x/1.10.2/js/jQuery_1.x.min'-->
+<!--            }-->
+<!--          });-->
+<!--          &lt;/script&gt;-->
+<!--          &lt;script&gt;-->
+<!--          require(['jquery','../lazyload'],function($){-->
+<!--            $(".lazy").lazyload()-->
+<!--          })-->
+<!--          &lt;/script&gt;-->
+<!--      </pre>-->
       <pre class="prettyprint">&lt;img class="lazy" data-original="img/example.jpg" width="765" height="574"&gt;</pre>
 
       <div id="container">
@@ -83,12 +83,12 @@ require(['jquery','../lazyload'],function($){
         <img class="lazy img-responsive" src="img/grey.gif" data-original="img/viper_1.jpg" width="765" height="574" alt="Viper 1"><br/>
         <img class="lazy img-responsive" src="img/grey.gif" data-original="img/viper_corner.jpg" width="765" height="574" alt="Viper Corner"><br/>
         <img class="lazy img-responsive" src="img/grey.gif" data-original="img/bmw_m3_gt.jpg" width="765" height="574" alt="BMW M3 GT"><br/>
-        <img class="lazy img-responsive" src="img/grey.gif" data-original="img/corvette_pitstop.jpg" width="765" height="574" alt="Corvette Pitstop"><br/>      
+        <img class="lazy img-responsive" src="img/grey.gif" data-original="img/corvette_pitstop.jpg" width="765" height="574" alt="Corvette Pitstop"><br/>
       </div>
     </div>
   </div>
-  
-  <script src="http://cdn.bootcss.com/require.js/2.1.15/require.min.js"></script>
+
+  <script href="app/scripts/js/require.min.js"></script>
   <script>
   require.config({
     // baseUrl: 'js/lib',
@@ -111,6 +111,6 @@ require(['jquery','../lazyload'],function($){
   })
   </script>
 
-  
+
 </body>
 </html>
